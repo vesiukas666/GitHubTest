@@ -44,8 +44,10 @@ public class SecondDay2 {
                 secondDay.triangle(scanner);
                 break;
             case 2:
+                secondDay.square(scanner);
                 break;
             case 3:
+                secondDay.rectangle(scanner);
                 break;
             case 4:
                 break;
@@ -63,12 +65,24 @@ public class SecondDay2 {
 
     private void triangle(Scanner scanner){
         System.out.println("Iveskite a stattini");
-
         double a = getcorrectnumb(scanner);
-
         System.out.println("Iveskite b statini");
         double b =  getcorrectnumb(scanner);
         System.out.println("Trikampio plotas" + (a*b/2));
+    }
+
+    private void square(Scanner scanner){ System.out.println("Iveskite a stattini");
+        double a = getcorrectnumb(scanner);
+        System.out.println("Iveskite b statini");
+        double b =  getcorrectnumb(scanner);
+        System.out.println("Kvadrato plotas" + a*b);
+        }
+    private void rectangle(Scanner scanner) {
+        System.out.println("Iveskite a stattini");
+        double a = getcorrectnumb(scanner);
+        System.out.println("Iveskite b statini");
+        double b = getcorrectnumb(scanner);
+        System.out.println("Staciakampio plotas" + a/2);
     }
 
     private static double getcorrectnumb(Scanner scanner){
